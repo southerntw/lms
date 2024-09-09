@@ -18,7 +18,7 @@ services:
 
   frappe:
     image: frappe/bench:latest
-    command: bash /workspace/init.sh
+    command: tail -f /dev/null
     environment:
       - SHELL=/bin/bash
     working_dir: /home/frappe
