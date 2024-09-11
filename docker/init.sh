@@ -28,7 +28,7 @@ bench get-app lms
 
 bench new-site lms.localhost \
 --force \
---mariadb-root-password 123 \
+--mariadb-root-password ${MYSQL_ROOT_PASSWORD} \
 --admin-password admin \
 --no-mariadb-socket
 
